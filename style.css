@@ -265,6 +265,12 @@ width: auto;
     text-align: center;
     padding: 10px;
 }
+.portfolio-details h3{
+  font-size: 1.2rem;
+}
+.portfolio-details p{
+  font-size: 1rem;
+}
 
 .portfolio-image-container:hover {
     box-shadow: 0 0 20px #74ADC8;
@@ -384,11 +390,31 @@ button:focus {
 
 
 /*Experiece Section And Education  */
+@media screen and (max-width: 572px)
+{
+  html{
+    font-size: 15px;
+  }
+  .timeline-box {
+      width: 100%!important;
+      left: 12%!important;
+
+  }
+  #timeline-divider {
+    left: 5%! important;
+    /*border: 2px dashed #0096fa6b;*/
+
+  }
+  .timeline-box:nth-child(2n+1)::after {
+      right: 105%! important;
+  }
+
+}
 
 .timeline {
     position: relative;
     width: 75%;
-  
+
 }
 
 .timeline-box {
@@ -443,7 +469,7 @@ button:focus {
     background-color: grey;
     top: 25%;
     border-radius: 50%;
-    z-index: 10;
+    z-index: 1;
 }
 
 .timeline-box:nth-child(2n) {
